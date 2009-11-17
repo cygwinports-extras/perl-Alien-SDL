@@ -1,0 +1,41 @@
+perl-Alien-SDL
+------------------------------------------
+Alien::SDL can be used to detect and get configuration settings from
+an installed SDL and related libraries.
+
+Runtime requirements:
+  perl-5.10.0-5
+
+Build requirements:
+  cygport-0.9.9-1
+  perl-5.10.0-5
+
+Canonical website:
+  http://search.cpan.org/dist/Alien-SDL/
+
+Canonical download:
+  http://search.cpan.org/CPAN/authors/id/K/KT/KTHAKORE/
+
+-------------------------------------------
+
+Build instructions:
+  unpack perl-Alien-SDL-0.7.3-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./perl-Alien-SDL-0.7.3-X.cygport all
+
+This will create:
+  /usr/src/perl-Alien-SDL-0.7.3-X-src.tar.bz2
+  /usr/src/perl-Alien-SDL-0.7.3-X.tar.bz2
+
+-------------------------------------------
+
+Port Notes:
+
+----- version 0.7.3-1 -----
+Initial release for Cygwin 1.7.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
