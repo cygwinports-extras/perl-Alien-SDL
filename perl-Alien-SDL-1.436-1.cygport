@@ -1,0 +1,13 @@
+CPAN_AUTHOR=froggs
+inherit perl
+
+DEPEND="perl(Capture::Tiny)
+	perl(File::ShareDir)
+	perl(File::Which)
+	perl(Text::Patch)
+	pkgconfig(sdl)
+
+
+"
+
+export SDL_INST_DIR=/usr
