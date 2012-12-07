@@ -1,0 +1,19 @@
+CPAN_AUTHOR=jtpalmer
+inherit perl
+
+NAME="perl-Alien-SDL"
+VERSION=1.438
+RELEASE=1
+CATEGORY="Perl"
+SUMMARY="Perl SDL configuration module"
+DESCRIPTION="Alien::SDL can be used to detect and get configuration settings
+from an installed SDL and related libraries."
+
+DEPEND="perl(Capture::Tiny)
+	perl(File::ShareDir)
+	perl(File::Which)
+	perl(Text::Patch)
+	pkgconfig(sdl)
+"
+
+export SDL_INST_DIR=/usr
