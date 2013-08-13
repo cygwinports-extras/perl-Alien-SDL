@@ -1,8 +1,8 @@
-CPAN_AUTHOR=jtpalmer
+CPAN_AUTHOR=froggs
 inherit perl
 
 NAME="perl-Alien-SDL"
-VERSION=1.438
+VERSION=1.440
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl SDL configuration module"
