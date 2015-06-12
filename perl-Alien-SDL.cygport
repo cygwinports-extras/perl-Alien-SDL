@@ -2,7 +2,7 @@ CPAN_AUTHOR=froggs
 inherit perl
 
 NAME="perl-Alien-SDL"
-VERSION=1.440
+VERSION=1.446
 RELEASE=1
 CATEGORY="Perl"
 SUMMARY="Perl SDL configuration module"
@@ -16,4 +16,9 @@ DEPEND="perl(Capture::Tiny)
 	pkgconfig(sdl)
 "
 
-export SDL_INST_DIR=/usr
+src_compile() {
+	lndirs
+	cd ${B}
+	SDL_INST_DIR=/usr \
+	perl_compile installdirs=vendor --travis
+}
