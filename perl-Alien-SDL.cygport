@@ -3,7 +3,7 @@ inherit perl
 
 NAME="perl-Alien-SDL"
 VERSION=1.446
-RELEASE=1
+RELEASE=2
 CATEGORY="Perl"
 SUMMARY="Perl SDL configuration module"
 DESCRIPTION="Alien::SDL can be used to detect and get configuration settings
