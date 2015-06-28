@@ -1,0 +1,10 @@
+--- origsrc/Alien-SDL-1.446/lib/Alien/SDL.pm	2015-02-21 13:53:18.000000000 -0600
++++ src/Alien-SDL-1.446/lib/Alien/SDL.pm	2015-06-28 12:37:40.705987900 -0500
+@@ -235,7 +235,6 @@ sub check_header {
+   my $config = {};
+   if($^O eq 'cygwin') {
+     my $ccflags = $Config{ccflags};
+-    $ccflags    =~ s/-fstack-protector//;
+     $config     = { ld => 'gcc', cc => 'gcc', ccflags => $ccflags };
+   }
+ 

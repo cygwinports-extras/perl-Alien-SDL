@@ -3,11 +3,13 @@ inherit perl
 
 NAME="perl-Alien-SDL"
 VERSION=1.446
-RELEASE=2
+RELEASE=3
 CATEGORY="Perl"
 SUMMARY="Perl SDL configuration module"
 DESCRIPTION="Alien::SDL can be used to detect and get configuration settings
 from an installed SDL and related libraries."
+
+PATCH_URI="1.446-gcc49.patch"
 
 DEPEND="perl(Capture::Tiny)
 	perl(File::ShareDir)
